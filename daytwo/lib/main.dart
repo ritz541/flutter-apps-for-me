@@ -1,5 +1,6 @@
 import 'package:daytwo/pages/home_page.dart';
 import 'package:daytwo/pages/login_page.dart';
+import 'package:daytwo/utils/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -25,9 +26,8 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: "/login",
       routes: {
-        // "/": (context) =>  LoginPage(),
-        "/home": (context) =>  const HomePage(),
-        "/login": (context) =>  const LoginPage(),
+        MyRoutes.homeroute: (context) =>  const HomePage(),
+        MyRoutes.loginroute: (context) =>  const LoginPage(),
       },
     );
   }
